@@ -21,6 +21,6 @@ For setup, read and follow the below instructions:
 
 3. The project will automatically import and nothing special to do.  All will be done automatically.
 
-4. Now, you can provide the list of items of your choice in ' `ApplicationConfig.properties` and run the `testng.xml` as TestNG suite.
+4. Now, you can provide the list of items of your choice in `ApplicationConfig.properties` and run the `testng.xml` as TestNG suite.
 
-5. Check the details in 'ResultsData' folder.
+5. Check the details in `ResultsData` folder.
