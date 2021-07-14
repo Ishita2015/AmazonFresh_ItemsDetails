@@ -13,7 +13,7 @@ For setup, read and follow the below instructions:
 ## Quickstart
 
 1. Open a Git Bash Prompt and run below command:
-   `git clone git@git.labs.hosting.cerence.net:ps/toyota/toyota-artt.git`
+   `git clone https://github.com/Ishita2015/AmazonFresh_ItemsDetails.git`
 
 1. Open Eclipse:
 	1. Open (Do not use Import Project)
