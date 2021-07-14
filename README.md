@@ -15,10 +15,12 @@ For setup, read and follow the below instructions:
 1. Open a Git Bash Prompt and run below command:
    `git clone https://github.com/Ishita2015/AmazonFresh_ItemsDetails.git`
 
-1. Open Eclipse:
+2. Open Eclipse:
 	1. Open (Do not use Import Project)
-	1. Select `AmazonFresh` project folder
+	1. Select `AmazonFresh_ItemsDetails` project folder
 
-The project will automatically import and nothing special to do.  All will be done automatically.
-Now, you can provide the list of items of your choice in 'ApplicationConfig.properties' and run the 'testng.xml' as TestNG suite.
-Check the details in 'ResultsData' folder.
+3. The project will automatically import and nothing special to do.  All will be done automatically.
+
+4. Now, you can provide the list of items of your choice in ' `ApplicationConfig.properties` and run the `testng.xml` as TestNG suite.
+
+5. Check the details in 'ResultsData' folder.
