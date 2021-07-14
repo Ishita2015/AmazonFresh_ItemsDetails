@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="org.amazon.testcases.TC002_GetItemsDetailsWithoutLogin"/>
+      <class name="org.amazon.testcases.TC005_GetTop5ItemsDetails"/>
+      <class name="org.amazon.testcases.TC003_PromotionOfDeals"/>
+      <class name="org.amazon.testcases.TC004_ItemsPerPageResults"/>
+      <class name="org.amazon.testcases.TC006_SendEmail"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
