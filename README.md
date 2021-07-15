@@ -16,10 +16,10 @@ For setup, read and follow the below instructions:
    `git clone https://github.com/Ishita2015/AmazonFresh_ItemsDetails.git`
 
 2. Open Eclipse:
-	1. Open (Do not use Import Project)
-	1. Select `AmazonFresh_ItemsDetails` project folder
+	i. Import Project as Maven -> Existing Maven Projects
+	ii. Select `AmazonFresh_ItemsDetails` project folder and click finish.
 
-3. The project will automatically import and nothing special to do.  All will be done automatically.
+3. The project will be imported and nothing special to do.
 
 4. Now, you can provide the list of items of your choice in `ApplicationConfig.properties` and run the `testng.xml` as TestNG suite.
 
