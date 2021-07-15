@@ -16,8 +16,8 @@ For setup, read and follow the below instructions:
    `git clone https://github.com/Ishita2015/AmazonFresh_ItemsDetails.git`
 
 2. Open Eclipse:
-	i. Import Project as Maven -> Existing Maven Projects
-	ii. Select `AmazonFresh_ItemsDetails` project folder and click finish.
+	1. Import Project as Maven -> Existing Maven Projects
+	2. Select `AmazonFresh_ItemsDetails` project folder and click finish.
 
 3. The project will be imported and nothing special to do.
 
