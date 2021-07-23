@@ -1,10 +1,12 @@
-package org.amazon.pages;
+package com.webautomation.amazonfresh.pages;
 
 import java.io.IOException;
-import org.amazon.library.PageActions;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import com.webautomation.amazonfresh.library.PageActions;
 
 public class HomePage {
 

@@ -1,11 +1,13 @@
-package org.amazon.pages;
+package com.webautomation.amazonfresh.pages;
 
 import java.io.IOException;
-import org.amazon.library.PageActions;
-import org.amazon.library.PropertyReader;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import com.webautomation.amazonfresh.library.PageActions;
+import com.webautomation.amazonfresh.library.PropertyReader;
 
 public class LoginPage {
 	

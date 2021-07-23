@@ -1,4 +1,4 @@
-package org.amazon.testcases;
+package com.webautomation.amazonfresh.testcases;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -7,14 +7,16 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import javax.imageio.ImageIO;
-import org.amazon.base.BaseMethods;
-import org.amazon.library.PropertyReader;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import org.zeroturnaround.zip.ZipUtil;
+
+import com.webautomation.amazonfresh.base.BaseMethods;
+import com.webautomation.amazonfresh.library.PropertyReader;
 
 public class TC003_PromotionOfDeals extends BaseMethods {
 

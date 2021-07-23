@@ -1,4 +1,4 @@
-package org.amazon.testcases;
+package com.webautomation.amazonfresh.testcases;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -9,13 +9,14 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import org.amazon.base.BaseMethods;
-import org.amazon.library.PropertyReader;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
+import com.webautomation.amazonfresh.base.BaseMethods;
+import com.webautomation.amazonfresh.library.PropertyReader;
 
 public class TC004_ItemsPerPageResults extends BaseMethods {
 	

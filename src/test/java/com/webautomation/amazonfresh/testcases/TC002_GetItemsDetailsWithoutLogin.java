@@ -1,13 +1,11 @@
-package org.amazon.testcases;
+package com.webautomation.amazonfresh.testcases;
 
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import org.amazon.base.BaseMethods;
-import org.amazon.library.FileActions;
-import org.amazon.library.PropertyReader;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +13,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+
+import com.webautomation.amazonfresh.base.BaseMethods;
+import com.webautomation.amazonfresh.library.FileActions;
+import com.webautomation.amazonfresh.library.PropertyReader;
 
 public class TC002_GetItemsDetailsWithoutLogin extends BaseMethods {
 	

@@ -1,10 +1,8 @@
-package org.amazon.base;
+package com.webautomation.amazonfresh.base;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-import org.amazon.library.PropertyReader;
-import org.amazon.pages.HomePage;
-import org.amazon.pages.LoginPage;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -12,6 +10,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+
+import com.webautomation.amazonfresh.library.PropertyReader;
+import com.webautomation.amazonfresh.pages.HomePage;
+import com.webautomation.amazonfresh.pages.LoginPage;
 
 public class BaseMethods {
 	

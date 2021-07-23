@@ -1,11 +1,12 @@
-package org.amazon.library;
+package com.webautomation.amazonfresh.library;
 
-import org.amazon.base.BaseMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.webautomation.amazonfresh.base.BaseMethods;
 
 public class PageActions extends BaseMethods{
 
@@ -27,16 +28,16 @@ public class PageActions extends BaseMethods{
 		element.click();
 	}
 	
-	public void selectDataUsingVisibleText(WebElement element, String text) {
-		wait.until(ExpectedConditions.textToBePresentInElement(element, text));
-		Select s = new Select(element);
-		s.selectByVisibleText(text);
+	public void selectDataUsingVisibleText(WebElement element, String visibletext) {
+		wait.until(ExpectedConditions.textToBePresentInElement(element, visibletext));
+		Select selectdata = new Select(element);
+		selectdata.selectByVisibleText(visibletext);
 	}
 	
 	public void selectDataUsingValue(WebElement element, String value) {
 		wait.until(ExpectedConditions.textToBePresentInElement(element, value));
-		Select s = new Select(element);
-		s.selectByValue(value);
+		Select selectdata = new Select(element);
+		selectdata.selectByValue(value);
 	}
 
 }
