@@ -3,11 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="org.amazon.testcases.TC002_GetItemsDetailsWithoutLogin"/>
-      <class name="org.amazon.testcases.TC005_GetTop5ItemsDetails"/>
-      <class name="org.amazon.testcases.TC003_PromotionOfDeals"/>
-      <class name="org.amazon.testcases.TC004_ItemsPerPageResults"/>
-      <class name="org.amazon.testcases.TC006_SendEmail"/>
+      <class name="com.webautomation.amazonfresh.testcases.TC002_GetItemsDetailsWithoutLogin"/>
+      <class name="com.webautomation.amazonfresh.testcases.TC005_GetTop5ItemsDetails"/>
+      <class name="com.webautomation.amazonfresh.testcases.TC003_PromotionOfDeals"/>
+      <class name="com.webautomation.amazonfresh.testcases.TC004_ItemsPerPageResults"/>
+      <class name="com.webautomation.amazonfresh.testcases.TC006_SendEmail"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

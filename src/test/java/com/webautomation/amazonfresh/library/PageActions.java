@@ -11,7 +11,7 @@ import com.webautomation.amazonfresh.base.BaseMethods;
 public class PageActions extends BaseMethods{
 
 	WebDriverWait wait;
-	WebDriver driver;
+	WebDriver driverPageActions;
 	
 	public PageActions(WebDriver driver){
 		wait = new WebDriverWait(driver, 20);

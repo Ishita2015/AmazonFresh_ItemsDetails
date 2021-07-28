@@ -14,11 +14,11 @@ public class TC001_GetItemsDetailsWithLogin extends BaseMethods {
 
 	@Test
 	public void loginExecution() throws IOException {
-		login.clickSignInTab();
-		login.enterUsername();
-		login.clickContinue();
-		login.enterPassword();
-		login.clickSubmit();
+		getLogin().clickSignInTab();
+		getLogin().enterUsername();
+		getLogin().clickContinue();
+		getLogin().enterPassword();
+		getLogin().clickSubmit();
 	}	
 	
 	@Test 

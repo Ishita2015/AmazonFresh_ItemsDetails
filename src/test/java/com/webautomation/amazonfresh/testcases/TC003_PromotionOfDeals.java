@@ -3,7 +3,7 @@ package com.webautomation.amazonfresh.testcases;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.net.URL;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import javax.imageio.ImageIO;
@@ -25,26 +25,29 @@ public class TC003_PromotionOfDeals extends BaseMethods {
 	@Test
 	public void getImageFromPromotionsSlideShow() {
 		try {
-			List<WebElement> slideShowItemsList = driver.findElements(By.xpath(XPATH_STR));
-			WebDriver newDriver = new ChromeDriver();
+			String dateStr= "";
+			List<WebElement> slideShowItemsList = getDriver().findElements(By.xpath(XPATH_STR));
+			WebDriver driverPromotion = new ChromeDriver();
 			while (slideShowItemsList.isEmpty()) {
 				System.out.println("-------------Items are not present, again trying -------------");
-				newDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				newDriver.navigate().to(PropertyReader.configReader("URL"));
-				slideShowItemsList = newDriver.findElements(By.xpath(XPATH_STR));
+				driverPromotion.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				driverPromotion.navigate().to(PropertyReader.configReader("URL"));
+				slideShowItemsList = driverPromotion.findElements(By.xpath(XPATH_STR));
 			}
 			for (WebElement items : slideShowItemsList) {	
 				String imgSRC = items.getAttribute("src");
-				LocalDateTime time = LocalDateTime.now();
-				String timeStr = time.toString().replace(":", "-").replace("T", "_");
+				LocalDate date = LocalDate.now();
+				dateStr = date.toString().replace(":", "-").replace("T", "_");
+				new File("./SlideShowImages/" + dateStr).mkdir();
+				
 				String imgAltName = items.getAttribute("alt").replace(" ", "_").replace("|", "").replace(",", "_").replace(":", "_");
 				
 				URL imgURL = new URL(imgSRC);
 				BufferedImage imgSave = ImageIO.read(imgURL);
-				ImageIO.write(imgSave, "jpg", new File("./SlideShowImages/dealImage_" + timeStr + "_" + imgAltName + ".jpg"));
+				ImageIO.write(imgSave, "jpg", new File("./SlideShowImages/" + dateStr + "/" + imgAltName + ".jpg"));
 			}
 			ZipUtil.pack(new File("./SlideShowImages/"), new File("./ResultsData/HomePageDealsImages.zip"));
-			newDriver.quit();
+			driverPromotion.quit();
 		}
 		catch (Exception e) {
 			e.printStackTrace();

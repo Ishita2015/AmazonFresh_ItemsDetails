@@ -20,7 +20,7 @@ public class TC005_GetTop5ItemsDetails {
 			List<String[]> finalLines = new ArrayList<String[]>();
 			
 			String[] fileHeaders = PropertyReader.configReader("FileHeaders").split(",");
-			String[] items = PropertyReader.configReader("items").split(",");
+			String[] items = PropertyReader.configReader("Items").split(",");
 			
 			for (String eachItem : items) {
 				int count = 1;
@@ -34,7 +34,7 @@ public class TC005_GetTop5ItemsDetails {
 						else {
 							int spaceIndex = lines[4].indexOf(" ");
 							String price = lines[4].substring(spaceIndex+1);
-							if (lines[0].equalsIgnoreCase(eachItem) && Float.parseFloat(price) < 300.00) {
+							if (lines[0].equalsIgnoreCase(eachItem) && Float.parseFloat(price) < Float.parseFloat(PropertyReader.configReader("PriceLimit"))) {
 								finalLines.add(lines);
 								count++;
 								if (count > 5) { break; }
