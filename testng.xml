@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.webautomation.amazonfresh.testcases.TC002_GetItemsDetailsWithoutLogin"/>
+      <class name="com.webautomation.amazonfresh.testcases.TC005_GetTop5ItemsDetails"/>
+      <class name="com.webautomation.amazonfresh.testcases.TC003_PromotionOfDeals"/>
+      <class name="com.webautomation.amazonfresh.testcases.TC004_ItemsPerPageResults"/>
+      <class name="com.webautomation.amazonfresh.testcases.TC006_SendEmail"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
