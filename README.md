@@ -1,6 +1,26 @@
 # AmazonFresh_ItemsDetails
 
-This project aims to provide information of requested items from Amazon (Amazon Fresh category) and create a detailed reports of them.
+This project aims to provide information of requested items from Amazon (Amazon Fresh category) and create a detailed reports of them based on below requirements:
+
+Requirement no 1
+------------------
+Search for 10 items and create a report of top 10 results of each item
+It should contain - Category, Complete Item Description, Item weight, Net Quantity, Item price (all 3), In Stock(yes/no), Brand, Link
+
+Requirement no 2
+------------------
+Find the total no of pages for a given item
+Also log how many per page search results are present, also log how many are unique
+
+Requirement no 3
+------------------
+Categorization - Find top 5 unique products that satisfy the condition (price < x rs)
+
+Requirement no 4
+------------------
+Look out for all promotions and download image(store by folder of each date)
+
+# Setup Details
 
 ## Pre-requisite
 
