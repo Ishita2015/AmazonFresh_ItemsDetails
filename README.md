@@ -4,13 +4,13 @@ This project aims to provide information of requested items from Amazon (Amazon 
 
 Requirement no 1
 ------------------
-Search for 10 items and create a report of top 10 results of each item
-It should contain - Category, Complete Item Description, Item weight, Net Quantity, Item price (all 3), In Stock(yes/no), Brand, Link
+Search for 10 items and create a report of top 10 results of each item.
+It should contain - Category, Complete Item Description, Brand, Item Price (MRP, Sale-Price, Savings), Item weight, Net Quantity, In Stock(yes/no) and Link.
 
 Requirement no 2
 ------------------
-Find the total no of pages for a given item
-Also log how many per page search results are present, also log how many are unique
+Find the total no. of pages for a given item.
+Also log how many per page search results are present, and how many are unique.
 
 Requirement no 3
 ------------------
@@ -18,7 +18,7 @@ Categorization - Find top 5 unique products that satisfy the condition (price < 
 
 Requirement no 4
 ------------------
-Look out for all promotions and download image(store by folder of each date)
+Look out for all promotions and download images (store by folder of each date)
 
 # Setup Details
 
@@ -43,4 +43,4 @@ For setup, read and follow the below instructions:
 
 4. Now, you can provide the list of items of your choice in `ApplicationConfig.properties` and run the `testng.xml` as TestNG suite.
 
-5. Check the details in `ResultsData` folder.
+5. Check the detailed report in `ResultsData` folder.
