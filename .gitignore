@@ -3,6 +3,7 @@ target/*
 .settings/*
 .project
 .classpath
+temp/*
 
 # Compiled class file
 *.class
